@@ -1,0 +1,182 @@
+{
+  "cardId": 45,
+  "cardName": "텐 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "완벽한 사랑과 조화",
+            "가족의 사랑과 지지",
+            "장기적인 관계의 행복"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 또는 연인 관계의 불화",
+            "이상적인 관계에 대한 환상 깨짐",
+            "감정적 안정의 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "직업적 성취와 만족",
+            "일과 삶의 완벽한 균형",
+            "동료들과의 조화로운 관계"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "직장 내 갈등 또는 불만족",
+            "일과 삶의 균형 상실",
+            "커리어 목표와 현실의 불일치"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "재정적 안정과 풍요",
+            "가족의 경제적 행복",
+            "장기적인 재정 계획의 성공"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "재정적 불안정 또는 손실",
+            "가족 내 금전적 갈등",
+            "물질적 성공에 대한 환상 깨짐"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "완벽한 건강과 웰빙",
+            "가족 전체의 건강",
+            "정신적, 육체적 조화"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 구성원의 건강 문제",
+            "스트레스로 인한 건강 악화",
+            "건강과 웰빙의 불균형"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "학업적 성취와 만족",
+            "가족의 교육적 지원",
+            "학습 환경의 조화"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "학업 스트레스 또는 불만족",
+            "가족의 기대와 개인의 목표 불일치",
+            "학습 의욕 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "깊고 의미 있는 우정",
+            "사회적 관계의 조화",
+            "친구들과의 완벽한 이해"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "친구 관계의 갈등 또는 단절",
+            "사회적 고립감",
+            "우정에 대한 환상 깨짐"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "완벽한 가족의 화합",
+            "세대 간 이해와 사랑",
+            "가정의 평화와 안정"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 간의 불화 또는 단절",
+            "가족 구성원 간의 오해",
+            "이상적인 가족상의 붕괴"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "전반적인 삶의 만족과 행복",
+            "모든 영역에서의 조화와 균형",
+            "이상적인 상황의 실현"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "삶의 여러 영역에서의 불만족",
+            "이상과 현실의 괴리",
+            "행복에 대한 환상 깨짐"
+          ]
+        }
+      ]
+    }
+  ]
+}

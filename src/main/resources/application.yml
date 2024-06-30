@@ -1,0 +1,59 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-response: true
+
+spring:
+  devtools:
+    livereload:
+      enabled: false
+    restart:
+      enabled: false
+    thymeleaf:
+      cache: false
+      prefix: classpath:/templates/
+      suffix: .html
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:mem:test;MODE=MySQL'
+    #    url: 'jdbc:h2:~/data/test;MODE=MySQL'
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database: h2
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: true
+        encoding: UTF-8
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+
+springdoc:
+  swagger-ui:
+    oauth:
+      enabled: false
+    path: /tarot/swagger-ui.html
+    disable-swagger-default-url: true
+    api-docs:
+      enabled: true
+    show-actuator: false
+    show-login-endpoint: false
+    default-produces-media-type: application/json
+    default-consumes-media-type: application/json

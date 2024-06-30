@@ -1,0 +1,182 @@
+{
+  "cardId": 47,
+  "cardName": "나이트 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "낭만적이고 열정적인 구애",
+            "감정적으로 성숙한 파트너",
+            "사랑의 제안이나 고백"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 조작이나 기만",
+            "비현실적인 로맨스 기대",
+            "관계에 대한 환상"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "창의적이고 열정적인 프로젝트 제안",
+            "감성적 지능을 활용한 업무 수행",
+            "예술적 재능의 발휘"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "비현실적인 직업 목표",
+            "업무에 대한 과도한 감정 이입",
+            "프로젝트의 지연이나 실패"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "창의적인 재정 기회",
+            "감성을 활용한 수익 창출",
+            "예술이나 감성 관련 투자"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 소비나 낭비",
+            "비현실적인 재정 계획",
+            "금전적 기회의 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "정서적 건강의 개선",
+            "창의적인 치유 방법 탐색",
+            "감정과 신체의 조화"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과도한 감정 기복으로 인한 건강 악화",
+            "현실적이지 않은 건강 관리 방식",
+            "중독이나 탈출 행동"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "창의적이고 열정적인 학습 접근",
+            "예술이나 감성 관련 분야의 탐구",
+            "직관적 이해력 향상"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "학업에 대한 비현실적 기대",
+            "감정에 치우친 학습 태도",
+            "집중력 부족으로 인한 학업 부진"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "감성적이고 지지적인 친구 관계",
+            "새로운 우정의 발전",
+            "친구를 위한 낭만적 제스처"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "친구 관계에서의 감정적 조작",
+            "비현실적인 우정 기대",
+            "친구에 대한 과도한 의존"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족 간의 감정적 유대 강화",
+            "가족을 위한 낭만적이거나 창의적인 제안",
+            "가족 관계에서의 성숙한 태도"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 관계에서의 감정적 혼란",
+            "가족에 대한 비현실적 기대",
+            "가족 간 소통의 어려움"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "창의성과 감성의 조화",
+            "낭만적이고 이상주의적인 접근",
+            "새로운 감정적 모험"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "현실과 이상의 괴리",
+            "감정적 불안정이나 혼란",
+            "비현실적인 기대나 환상"
+          ]
+        }
+      ]
+    }
+  ]
+}

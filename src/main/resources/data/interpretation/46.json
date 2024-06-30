@@ -1,0 +1,182 @@
+{
+  "cardId": 46,
+  "cardName": "페이지 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 로맨스의 시작",
+            "순수하고 열정적인 사랑",
+            "감정적 메시지나 고백"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "미성숙한 감정 표현",
+            "연애 경험 부족으로 인한 어려움",
+            "감정적 실망이나 배신"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 창의적 프로젝트",
+            "직장에서의 신선한 아이디어",
+            "열정적인 시작"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "비현실적인 직업 기대",
+            "경험 부족으로 인한 실수",
+            "직장에서의 미숙한 행동"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 재정적 기회",
+            "창의적인 수입원 발견",
+            "금전에 대한 긍정적 메시지"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "재정 관리 경험 부족",
+            "비현실적인 금전적 기대",
+            "재정적 실수나 손실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "건강 개선을 위한 새로운 접근",
+            "긍정적인 건강 소식",
+            "정서적 치유의 시작"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "건강 관리에 대한 무지",
+            "과도한 걱정이나 불안",
+            "정서적 불안정"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 학습 기회",
+            "창의적인 학습 방법",
+            "학업에 대한 열정"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "학업에 대한 비현실적 기대",
+            "집중력 부족",
+            "학습 의욕 저하"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 우정의 시작",
+            "순수하고 진실된 친구 관계",
+            "감정적 지지와 공감"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "불안정한 우정",
+            "친구 관계에서의 미숙함",
+            "감정적 배신이나 실망"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족 관계의 새로운 시작",
+            "가족 간의 감정적 소통 증가",
+            "순수한 가족애"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 관계에서의 미숙한 행동",
+            "가족 간 오해나 갈등",
+            "감정적 의존도 과다"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "새로운 감정적 경험",
+            "창의성과 직관력 향상",
+            "순수하고 열정적인 시작"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 미성숙",
+            "비현실적인 기대나 환상",
+            "새로운 시작에 대한 두려움"
+          ]
+        }
+      ]
+    }
+  ]
+}

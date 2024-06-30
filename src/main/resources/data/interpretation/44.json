@@ -1,0 +1,182 @@
+{
+  "cardId": 44,
+  "cardName": "나인 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "관계에서의 만족과 행복",
+            "감정적 충만함",
+            "사랑의 소원 성취"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적인 행복 뒤의 불만족",
+            "관계에서의 과도한 기대",
+            "진정한 감정적 연결의 부재"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "직업적 성취와 만족",
+            "경력 목표 달성",
+            "일에서의 행복감"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 성공 뒤의 공허함",
+            "과도한 직업적 기대",
+            "진정한 직업 만족의 부재"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "재정적 풍요와 안정",
+            "물질적 소원 성취",
+            "금전적 만족감"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "물질적 성공 뒤의 공허함",
+            "과도한 금전적 기대",
+            "진정한 풍요로움의 의미 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "전반적인 건강과 웰빙",
+            "건강 목표 달성",
+            "신체적, 정신적 균형"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 건강 뒤의 잠재적 문제",
+            "과도한 건강 관리",
+            "진정한 웰빙의 의미 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "학업적 성취와 만족",
+            "지적 호기심 충족",
+            "학습 목표 달성"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 학업 성공 뒤의 불만족",
+            "과도한 학업 스트레스",
+            "진정한 지적 성장의 부재"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "친구 관계에서의 만족과 행복",
+            "사회적 소원 성취",
+            "긍정적인 사회적 연결"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 우정 뒤의 불안정",
+            "과도한 사회적 기대",
+            "진정한 우정의 의미 상실"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족 관계에서의 만족과 행복",
+            "가족의 화합과 조화",
+            "가정에서의 평화"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 가족 행복 뒤의 갈등",
+            "과도한 가족 기대",
+            "진정한 가족 연대의 부재"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "전반적인 만족과 행복",
+            "소원 성취와 꿈의 실현",
+            "긍정적인 에너지와 낙관주의"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "표면적 행복 뒤의 공허함",
+            "과도한 기대와 환상",
+            "진정한 만족의 의미 상실"
+          ]
+        }
+      ]
+    }
+  ]
+}

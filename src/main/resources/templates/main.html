@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>타로를 뽑아보세요.</title>
+    <!-- Common CSS -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <!-- Common JavaScript -->
+    <script th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="content-wrapper">
+    <div th:insert="fragments/header :: header"></div>
+    <form id="tarotSelectionForm" th:action="@{/submit-tarot-selection}" method="post">
+        <div class="section">
+            <h2>타로주제 선택</h2>
+            <div class="option-group">
+                <th:block th:each="category : ${categories}">
+                    <label class="option">
+                        <input type="radio" th:name="category" th:value="${category.categoryCode}"
+                               th:text="${category.categoryName}">
+                    </label>
+                </th:block>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>카드 선택</h2>
+            <div class="option-group">
+                <!--
+                <label class="option">
+                    <input type="radio" th:name="cardCount" th:value="1" th:text="1장">
+                </label>
+                <label class="option">
+                    <input type="radio" th:name="cardCount" th:value="3" th:text="3장">
+                </label>
+                <label class="option">
+                    <input type="radio" th:name="cardCount" th:value="5" th:text="5장">
+                </label>
+                -->
+                <th:block th:each="readingMethod : ${readingMethods}">
+                    <label class="option tooltip">
+                        <input type="radio" th:name="cardCount" th:value="${readingMethod.cardCount}"
+                               th:text="${readingMethod.cardCount+'장'}">
+                        <span class="tooltiptext">
+                            <th:block th:each="method : ${readingMethod.methods}">
+                                <strong th:text="${method.methodName}"></strong>
+                                <span th:text="${method.description}"></span>
+                            </th:block>
+                        </span>
+                    </label>
+                </th:block>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>역방향 포함 여부</h2>
+            <div class="option-group">
+                <label class="option">
+                    <input type="radio" th:name="isReverseOn" th:value="true" th:text="ON">
+                </label>
+                <label class="option">
+                    <input type="radio" th:name="isReverseOn" th:value="false" th:text="OFF">
+                </label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>자동/수동</h2>
+            <div class="option-group">
+                <label class="option">
+                    <input type="radio" th:name="isAuto" th:value="true" th:text="자동">
+                </label>
+                <label class="option">
+                    <input type="radio" th:name="isAuto" th:value="false" th:text="수동">
+                </label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>타로 실행 버튼</h2>
+            <button type="submit" id="startConsultation">타로 시작</button>
+        </div>
+    </form>
+</div>
+<script>
+    document.querySelectorAll('.tooltip').forEach(tooltip => {
+        tooltip.addEventListener('mousemove', function(e) {
+            const tooltiptext = this.querySelector('.tooltiptext');
+            const rect = this.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+
+            tooltiptext.style.left = offsetX + 'px';
+            tooltiptext.style.top = (offsetY - tooltiptext.offsetHeight - 10) + 'px';
+        });
+    });
+
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function(e) {
+                const radio = this.querySelector('input[type="radio"]');
+                const group = this.closest('.option-group');
+
+                group.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+                radio.checked = true;
+
+                // 이벤트 버블링 방지
+                e.preventDefault();
+            });
+        });
+
+        document.getElementById('tarotSelectionForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // 폼의 기본 제출 동작을 막습니다.
+
+            // 선택된 값들을 가져옵니다.
+            const categoryCode = document.querySelector('input[name="category"]:checked')?.value;
+            const cardCount = document.querySelector('input[name="cardCount"]:checked')?.value;
+            const isReverseOn = document.querySelector('input[name="isReverseOn"]:checked')?.value;
+            const isAuto = document.querySelector('input[name="isAuto"]:checked')?.value;
+
+            // 모든 항목이 선택되었는지 확인
+            if (!categoryCode || !cardCount || !isReverseOn || !isAuto) {
+                alert('모든 항목을 선택해주세요.');
+                return;
+            }
+
+            if(isAuto === 'true'){
+                window.location.href = `/card/select/auto/result?categoryCode=${categoryCode}&cardCount=${cardCount}&isReverseOn=${isReverseOn}`;
+            }else{
+                window.location.href = `/card/select/self?categoryCode=${categoryCode}&cardCount=${cardCount}&isReverseOn=${isReverseOn}`;
+            }
+        });
+</script>
+<!--<div th:replace="fragments/footer :: footer"></div>-->
+</body>
+</html>

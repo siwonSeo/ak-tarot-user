@@ -1,0 +1,182 @@
+{
+  "cardId": 41,
+  "cardName": "식스 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "과거의 사랑을 그리워함",
+            "순수하고 무조건적인 애정",
+            "어린 시절의 연인과의 재회"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거에 집착하여 현재 관계에 지장",
+            "미성숙한 사랑의 태도",
+            "새로운 관계로 나아가기 어려움"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "과거의 경험이 현재 직무에 도움",
+            "옛 동료나 멘토와의 재회",
+            "직장에서의 편안함과 안정"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거의 업무 방식에 얽매임",
+            "새로운 기술 습득의 어려움",
+            "직업적 성장의 정체"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "과거의 투자가 현재 이익으로",
+            "유산이나 상속의 가능성",
+            "재정적 안정과 여유"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거의 재정 실수 반복",
+            "현대적 재정 관리의 필요성",
+            "금전적 성장의 정체"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "어린 시절의 건강한 습관 회복",
+            "과거의 치료법이 도움",
+            "정신적, 육체적 휴식의 필요성"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거의 건강 문제 재발",
+            "현대적 치료법의 필요성",
+            "건강 관리의 혁신 필요"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "과거에 배운 지식의 유용성",
+            "옛 스승이나 동급생과의 재회",
+            "기초 지식의 중요성 인식"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "낡은 학습 방법에 얽매임",
+            "새로운 학문 분야 적응의 어려움",
+            "지적 성장의 정체"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "옛 친구와의 재회",
+            "순수한 우정의 가치 재발견",
+            "과거의 좋은 추억 회상"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거 친구관계에 집착",
+            "새로운 인연 만들기 어려움",
+            "친구관계의 성장 부재"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족 간의 화목한 관계 회복",
+            "어린 시절 추억의 소중함",
+            "가족 전통의 계승"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거의 가족 문제 재발",
+            "가족 관계의 진전 없음",
+            "새로운 가족 문화 수용의 어려움"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "과거에 대한 긍정적 회상",
+            "순수함과 단순함의 가치",
+            "향수와 그리움의 감정"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "과거에 대한 지나친 집착",
+            "현재와 미래에 대한 부적응",
+            "변화를 거부하는 태도"
+          ]
+        }
+      ]
+    }
+  ]
+}

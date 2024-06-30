@@ -1,0 +1,182 @@
+{
+  "cardId": 43,
+  "cardName": "에이트 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "현재 관계에서 벗어나려는 욕구",
+            "감정적 만족을 찾아 떠남",
+            "사랑의 상실과 포기"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "관계 회복을 위한 노력",
+            "떠나려던 마음 되돌리기",
+            "현재 관계의 가치 재발견"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "현 직장 이직 고려",
+            "새로운 경력 기회 탐색",
+            "현재 직무에 대한 불만족"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "현 직장에서의 새로운 기회 발견",
+            "이직 결정 재고",
+            "직업적 안정성 추구"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "재정적 변화를 위한 모험",
+            "안정된 수입원 포기",
+            "새로운 재정적 기회 추구"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "재정적 안정성 유지",
+            "위험한 투자 결정 재고",
+            "현재 재정 상황의 장점 인식"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "건강 회복을 위한 환경 변화",
+            "스트레스 요인으로부터의 탈출",
+            "새로운 건강 관리법 모색"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "현재 건강 관리 방식 유지",
+            "급격한 생활 변화 자제",
+            "점진적인 건강 개선"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "현재 학업 방향 전환",
+            "새로운 학문 분야 탐색",
+            "기존 학습 환경 이탈"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "현재 학업에 대한 재고",
+            "학업 중단 결정 철회",
+            "기존 지식의 가치 재평가"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "기존 친구 관계에서 벗어나기",
+            "새로운 사회적 환경 추구",
+            "고립을 선택하는 시기"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "오래된 우정의 가치 재발견",
+            "관계 회복을 위한 노력",
+            "사회적 고립에서 벗어나기"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족으로부터의 독립",
+            "가족 관계에서 벗어나려는 욕구",
+            "새로운 가족 환경 추구"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족과의 화해와 재결합",
+            "가족의 중요성 재인식",
+            "가족 관계 개선을 위한 노력"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "현 상황에서의 탈출 욕구",
+            "새로운 환경이나 경험 추구",
+            "과거와의 결별과 새로운 시작"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "현재 상황의 재평가",
+            "급격한 변화 결정 재고",
+            "현재의 가치 재발견"
+          ]
+        }
+      ]
+    }
+  ]
+}
