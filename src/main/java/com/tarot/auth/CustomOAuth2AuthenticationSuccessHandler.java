@@ -27,6 +27,8 @@ public class CustomOAuth2AuthenticationSuccessHandler extends SimpleUrlAuthentic
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
+        log.info("authentication:{}",authentication);
+        log.info("getPrincipal:{}",authentication.getPrincipal());
         log.info("oAuth2User:{}",oAuth2User);
         String email = oAuth2User.getAttribute("email");
         String token = jwtTokenProvider.createToken(email);
