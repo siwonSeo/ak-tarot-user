@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <title>타로 카드 읽기 서비스</title>
+    <title>AK Tarot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Common CSS -->
 </head>
 <body>
 <div th:fragment="header" class="header">
+    <!-- 로그인 상태에 따라 다른 아이콘 표시 -->
+    <div sec:authorize="isAuthenticated()">
+        <!-- 로그인 상태 아이콘 -->
+        <i class="fas fa-user-check"></i> <!-- Font Awesome 사용 예시 -->
+        <span th:text="${#authentication.name}" class="logo">사용자</span>
+        <form th:action="@{/auth/logout}" method="post" id="logoutForm">
+            <a href="#" onclick="document.getElementById('logoutForm').submit();" class="logo">로그아웃</a>
+        </form>
+    </div>
+    <div sec:authorize="!isAuthenticated()">
+        <!-- 비로그인 상태 아이콘 -->
+        <i class="fas fa-user"></i> <!-- Font Awesome 사용 예시 -->
+        <a th:href="@{/auth/login}" class="logo">로그인</a>
+    </div>
+
+
     <a href="/" class="logo">A(ce)K(ing) Tarot</a>
     <div class="menu-container">
         <button class="hamburger" onclick="toggleDropdown()">☰</button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="/card/intro">타로 카드 소개</a>
-            <a href="/reading">타로 리딩법</a>
+            <a th:href="@{/card/intro}">타로 카드 소개</a>
+            <a th:href="@{/card/reading}">타로 리딩법</a>
+            <div sec:authorize="isAuthenticated()">
+                <a th:href="@{/user/main}">사용자 메인</a>
+            </div>
         </div>
     </div>
 </div>

@@ -82,7 +82,7 @@ public class TarotController {
         return "intro";
     }
 
-    @GetMapping("/reading")
+    @GetMapping("/card/reading")
     public String reading(Model model) {
         model.addAttribute("readings", tarotService.getTaroCardReadings());
         return "reading";
