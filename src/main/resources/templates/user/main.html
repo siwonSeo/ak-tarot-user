@@ -32,7 +32,7 @@
     </div>
 
     <!-- 페이징 영역 (가운데 정렬 및 스타일 개선) -->
-    <div class="pagination-container">
+    <div th:if="${!cardConsults.isEmpty()}" class="pagination-container">
         <div class="pagination">
             <a th:if="${cardConsults.hasPrevious()}" th:href="@{/user/main(page=${cardConsults.number - 1}, size=${cardConsults.size})}" class="page-link">&laquo;</a>
             <a th:each="pageNumber : ${#numbers.sequence(0, cardConsults.totalPages - 1)}"
