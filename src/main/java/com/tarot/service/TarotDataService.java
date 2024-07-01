@@ -1,6 +1,6 @@
 package com.tarot.service;
 
-import com.tarot.entity.*;
+import com.tarot.entity.tarot.*;
 import com.tarot.repository.*;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

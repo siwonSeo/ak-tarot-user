@@ -13,7 +13,8 @@
     <div sec:authorize="isAuthenticated()">
         <!-- 로그인 상태 아이콘 -->
         <i class="fas fa-user-check"></i> <!-- Font Awesome 사용 예시 -->
-        <span th:text="${#authentication.name}" class="logo">사용자</span>
+        <img th:src="${#authentication.principal.picture}" alt="사진"/>
+        <span th:text="${#authentication.principal.name}" class="logo">사용자</span>
         <form th:action="@{/auth/logout}" method="post" id="logoutForm">
             <a href="#" onclick="document.getElementById('logoutForm').submit();" class="logo">로그아웃</a>
         </form>

@@ -8,23 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 @Slf4j
 @Component
 @RequiredArgsConstructor
-@Deprecated //현재 미사용
-public class JwtAuthenticationFilter extends OncePerRequestFilter {
+public class SessionAuthenticationFilter extends OncePerRequestFilter {
     private final String[] excludeUrls = {"/user","/api/user"};
     private final JwtTokenProvider jwtTokenProvider;
     private final CookieProvider cookieProvider;
@@ -33,32 +26,19 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         System.out.println("kkkkkkkkk");
         try{
-            String token = getJwtFromCookie(request);
-
-            if (token != null && jwtTokenProvider.validateToken(token)) {
-                String username = jwtTokenProvider.getUsername(token);
-                log.info(username);
-//                Authentication auth = new UsernamePasswordAuthenticationToken(username, null, Collections.emptyList());
-//                SecurityContextHolder.getContext().setAuthentication(auth);
-            }else{
-                System.out.println("#######");
-                log.info("토큰 만료됨!!!!!!!!!!");
-//                throw new Exception("토큰만료");
+            HttpSession httpSession = request.getSession(false);
+            if(httpSession == null){
+                throw new Exception("세션 만료");
             }
-
             filterChain.doFilter(request, response);
         }catch (Exception e){
-            // 토큰이 없거나 유효하지 않은 경우
-            System.out.println("doFilterInternal Exception#######"+e.getMessage());
             /*
-            log.info("jwt Exception:{}",e.getMessage());
             try {
                 SecurityContextHolder.clearContext(); // 보안 컨텍스트 초기화
             }catch (Exception se){
                 log.info("security Exception:{}",e.getMessage());
             }
             */
-            cookieProvider.removeCookies(response);
 
             HttpSession session = request.getSession(false);
             log.info("###session{}:",session);

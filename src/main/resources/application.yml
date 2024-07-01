@@ -6,6 +6,7 @@ server:
       enabled: true
       force: true
       force-response: true
+    session.timeout: 600
 
 logging:
   level:
@@ -39,7 +40,7 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect

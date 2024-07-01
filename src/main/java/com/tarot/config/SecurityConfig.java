@@ -3,6 +3,7 @@ package com.tarot.config;
 import com.tarot.auth.CustomLogoutSuccessHandler;
 import com.tarot.auth.CustomOAuth2AuthenticationSuccessHandler;
 import com.tarot.auth.JwtAuthenticationFilter;
+import com.tarot.auth.SessionAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,7 +33,8 @@ public class SecurityConfig {
             , "/favicon.ico"
     };
 
-    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+//    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    private final SessionAuthenticationFilter sessionAuthenticationFilter;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -40,7 +42,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers(PERMIT_URLS).permitAll()
                         .anyRequest().authenticated()
-                ).addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+//                ).addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                ).addFilterBefore(sessionAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
 //                .oauth2Login(oauth2 -> oauth2
 //                        .loginPage("/login")
 //                        .defaultSuccessUrl("/token", true)

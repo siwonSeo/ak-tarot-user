@@ -1,4 +1,4 @@
-package com.tarot.entity;
+package com.tarot.entity.tarot;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

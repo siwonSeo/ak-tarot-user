@@ -1,7 +1,6 @@
 package com.tarot.repository;
 
-import com.tarot.entity.TarotCardReadingMethod;
-import com.tarot.entity.TarotCardReadingMethodPosition;
+import com.tarot.entity.tarot.TarotCardReadingMethodPosition;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

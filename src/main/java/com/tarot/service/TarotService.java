@@ -2,8 +2,6 @@ package com.tarot.service;
 
 import com.tarot.dto.request.RequestTarotCard;
 import com.tarot.dto.response.*;
-import com.tarot.entity.TarotCard;
-import com.tarot.entity.TarotCardReadingMethod;
 import com.tarot.repository.TarotCardCategoryRepository;
 import com.tarot.repository.TarotCardInterpretationRepository;
 import com.tarot.repository.TarotCardKeyWordRepository;
