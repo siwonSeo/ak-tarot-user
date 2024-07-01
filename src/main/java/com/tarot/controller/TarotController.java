@@ -72,7 +72,7 @@ public class TarotController {
         model.addAttribute("isReverseOn", isReverseOn);
         model.addAttribute("category", tarotService.getCardCategorie(categoryCode));
         model.addAttribute("reading", tarotService.getTaroCardReading(cardCount));
-        model.addAttribute("cards", tarotService.getTaroCardConsultsBySelf(cards));
+        model.addAttribute("cards", tarotService.getTaroCardConsultsBySelf(cardCount,isReverseOn,categoryCode,cards));
         return "selected";
     }
 

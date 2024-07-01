@@ -9,7 +9,7 @@ public record RequestTarotCard(
         List<TarotCardSearch> searchCards
           ) {
     public record TarotCardSearch(
-                @Schema(description = "카테고리", example = "A")
+                @Schema(description = "카드ID", example = "0")
                 Integer cardId
             , @Schema(description = "역방향여부", example = "true")
                 @Nullable Boolean isReversed

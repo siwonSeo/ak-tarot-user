@@ -42,10 +42,9 @@ public class CustomOAuth2AuthenticationSuccessHandler extends SimpleUrlAuthentic
         String email = oAuth2User.getAttribute("email");
         String name = oAuth2User.getAttribute("given_name");
         String picture = oAuth2User.getAttribute("picture");
-        UserBase user = userBaseRepository.findByEmail(email).get();
-        if(user == null) {
-            user = userBaseRepository.save(new UserBase(email, name, picture));
-        };
+        UserBase user = userBaseRepository.findByEmail(email).orElseGet(
+            ()-> userBaseRepository.save(new UserBase(email, name, picture))
+        );
 
         UserDetails userDetails = new CustomUserDetails(
                 user.getId(),

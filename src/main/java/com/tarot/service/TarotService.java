@@ -1,13 +1,13 @@
 package com.tarot.service;
 
+import com.tarot.auth.CustomUserDetails;
 import com.tarot.dto.request.RequestTarotCard;
 import com.tarot.dto.response.*;
-import com.tarot.repository.TarotCardCategoryRepository;
-import com.tarot.repository.TarotCardInterpretationRepository;
-import com.tarot.repository.TarotCardKeyWordRepository;
-import com.tarot.repository.TarotCardRepository;
+import com.tarot.repository.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -22,6 +22,7 @@ public class TarotService {
     private final TarotCardKeyWordRepository tarotCardKeyWordRepository;
     private final TarotCardCategoryRepository tarotCardCategoryRepository;
     private final TarotCardInterpretationRepository tarotCardInterpretationRepository;
+    private final UserService userService;
 
     public List<ResponseTarotCardRandom> getTarotCardsRandom(){
         return tarotCardRepository.findTaroCardRandom();
@@ -70,11 +71,24 @@ public class TarotService {
         return this.reOrderConsult(params, queryResults);
     }
 
-    //상담 정보 자동
+    //상담 정보 수동(로그인시 이력 저장)
+    public List<ResponseTarotCardConsult> getTaroCardConsultsBySelf(int cardCount , Boolean isReverseOn
+            , Character categoryCode, List<RequestTarotCard.TarotCardSearch> params){
+        List<ResponseTarotCardConsult> queryResults = tarotCardRepository.findTaroCardConsults(params);// 쿼리 실행 결과
+
+        userService.saveUserConsult(cardCount, isReverseOn,categoryCode,params); //상담이력 저장
+
+        return this.reOrderConsult(params, queryResults);
+    }
+
+    //상담 정보 자동(로그인시 이력 저장)
     public List<ResponseTarotCardConsult> getTaroCardConsultsByRandom(int cardCount , Boolean isReverseOn
             , Character categoryCode){
         List<RequestTarotCard.TarotCardSearch> params = this.getRandomCards(cardCount, isReverseOn, categoryCode);
         List<ResponseTarotCardConsult> queryResults = tarotCardRepository.findTaroCardConsults(params);// 쿼리 실행 결과
+
+        userService.saveUserConsult(cardCount, isReverseOn,categoryCode,params); //상담이력 저장
+
         return this.reOrderConsult(params, queryResults);
     }
 
