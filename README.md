@@ -54,3 +54,8 @@
 초기 데이터 적재(H2 메모리 방식 사용시)
 타임리프 화면을 통한 기능 구현
 OAutnh로그인 적용(구글)
+
+##초기 환경 변수 필요(구글 OAuth2 인증시 필요)
+google-client-id
+google-client-secret
+google-redirection-url
