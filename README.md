@@ -44,18 +44,23 @@
 -테이블 구성
 카테고리(질문용)
 타로카드
-    카드 키워드
-        카드 키워드별 해석
+카드 키워드
+카드 키워드별 해석
 
 리딩 방식(타로카드 선택 장 수 별)
-  선택 위치별 해설키워드
+선택 위치별 해설키워드
+
+사용자 정보
+사용자 해설 이력 정보
 
 ## 구현 순서
 초기 데이터 적재(H2 메모리 방식 사용시)
 타임리프 화면을 통한 기능 구현
 OAutnh로그인 적용(구글)
+로그인후 카드점 실행시 이력적재
+내가 뽑았던 카드! 에서 이력 조회
 
 ##초기 환경 변수 필요(구글 OAuth2 인증시 필요)
-google-client-id
-google-client-secret
-google-redirection-url
+- google-client-id
+- google-client-secret
+- google-redirection-url
