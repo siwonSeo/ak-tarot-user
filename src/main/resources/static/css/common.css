@@ -556,3 +556,270 @@
   .show {
       display: block;
   }
+
+
+
+    .card-image.reverse {
+        transform: rotate(180deg);
+    }
+
+        .history-title {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .consult-item {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .consult-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .view-details-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card-list {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .card-item {
+            margin-right: 10px;
+        }
+
+        .card-image {
+            width: 50px;
+            height: auto;
+        }
+
+        .pagination-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .page-link {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .page-link.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .page-link:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 15px;
+}
+
+.user-avatar {
+    position: relative;
+    margin-right: 10px;
+}
+
+.user-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.user-icon {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 0.6em;
+}
+
+.user-name {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.logout-button, .login-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.logout-button:hover, .login-button:hover {
+    color: #f0f0f0;
+}
+
+.logout-button i, .login-button i {
+    margin-right: 5px;
+}
+
+.menu-container {
+    margin-left: 10px;
+}
+
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .google-login-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: #757575;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            width: 80%;
+            max-width: 250px;
+            margin: 20px auto;
+        }
+        .google-login-btn:hover {
+            background-color: #f5f5f5;
+        }
+        .google-logo {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+
+
+        .tarot-selection-deck {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            perspective: 1000px;
+        }
+        .tarot-selection-row {
+            display: flex;
+            justify-content: center;
+            height: 160px;
+            width: 100%;
+            max-width: 600px; /* 카드들이 너무 넓게 퍼지지 않도록 */
+        }
+        .tarot-selection-card {
+            width: 80px;
+            height: 140px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+            transform-style: preserve-3d;
+        }
+        .tarot-selection-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .tarot-selection-card.selected {
+            transform: translateY(-20px) rotateX(20deg);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .tarot-selection-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 4px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+        }
+        .tarot-selection-card.selected::after {
+            border-color: #3498db;
+        }
+        .selection-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .tarot-selection-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tarot-selection-button:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }

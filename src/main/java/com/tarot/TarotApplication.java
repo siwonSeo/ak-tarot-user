@@ -7,9 +7,11 @@ import lombok.RequiredArgsConstructor;
 import org.json.simple.parser.ParseException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.io.IOException;
 
+@EnableJpaAuditing
 @RequiredArgsConstructor
 @SpringBootApplication
 public class TarotApplication {
@@ -18,7 +20,7 @@ public class TarotApplication {
 		SpringApplication.run(TarotApplication.class, args);
 	}
 
-	@PostConstruct
+//	@PostConstruct
 	private void init() throws IOException, ParseException {
 		tarotDataService.setDefaultData();
 	}

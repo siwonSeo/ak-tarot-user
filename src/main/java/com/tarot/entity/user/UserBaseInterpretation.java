@@ -45,14 +45,6 @@ public class UserBaseInterpretation {
   @Comment("역방향 포함 여부")
   private Boolean isReverseOn;
 
-  public UserBaseInterpretation(Integer userId, Integer cardCount, Boolean isReverseOn, Character categoryCode, List<RequestTarotCard.TarotCardSearch> searchCards) {
-    this.userId = userId;
-    this.cardCount = cardCount;
-    this.isReverseOn = isReverseOn;
-    this.categoryCode = categoryCode;
-    this.searchCards = searchCards;
-  }
-
   @NotNull
   @Column(name = "category_code", nullable = false)
   @Comment("카테고리 코드")
@@ -61,6 +53,14 @@ public class UserBaseInterpretation {
   @Type(JsonType.class)
   @Column(name = "search_cards", nullable = false, columnDefinition = "json")
   private List<RequestTarotCard.TarotCardSearch> searchCards;
+
+  public UserBaseInterpretation(Integer userId, Integer cardCount, Boolean isReverseOn, Character categoryCode, List<RequestTarotCard.TarotCardSearch> searchCards) {
+    this.userId = userId;
+    this.cardCount = cardCount;
+    this.isReverseOn = isReverseOn;
+    this.categoryCode = categoryCode;
+    this.searchCards = searchCards;
+  }
 
   @ManyToOne
   @JoinColumn(name = "user_id", referencedColumnName = "id", insertable = false, updatable = false)

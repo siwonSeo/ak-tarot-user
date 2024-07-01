@@ -65,8 +65,8 @@ public class TarotController {
         List<RequestTarotCard.TarotCardSearch> cards;
         try {
             cards = mapper.readValue(searchCards, new TypeReference<List<RequestTarotCard.TarotCardSearch>>() {});
-        } catch (JsonProcessingException e) {
-            return "error";
+        } catch (Exception e) {
+            return "error.html";
         }
 
         model.addAttribute("isReverseOn", isReverseOn);

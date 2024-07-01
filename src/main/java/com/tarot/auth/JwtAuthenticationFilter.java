@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Slf4j
-@Component
+//@Component
 @RequiredArgsConstructor
 @Deprecated //현재 미사용
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
@@ -31,7 +31,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        System.out.println("kkkkkkkkk");
         try{
             String token = getJwtFromCookie(request);
 
@@ -41,15 +40,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 //                Authentication auth = new UsernamePasswordAuthenticationToken(username, null, Collections.emptyList());
 //                SecurityContextHolder.getContext().setAuthentication(auth);
             }else{
-                System.out.println("#######");
                 log.info("토큰 만료됨!!!!!!!!!!");
-//                throw new Exception("토큰만료");
+                throw new Exception("토큰만료");
             }
 
             filterChain.doFilter(request, response);
         }catch (Exception e){
             // 토큰이 없거나 유효하지 않은 경우
-            System.out.println("doFilterInternal Exception#######"+e.getMessage());
             /*
             log.info("jwt Exception:{}",e.getMessage());
             try {

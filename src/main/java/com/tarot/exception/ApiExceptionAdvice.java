@@ -6,16 +6,19 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.stream.Collectors;
 
 @Slf4j
-@RestControllerAdvice
+@ControllerAdvice
+//@RestControllerAdvice
 public class ApiExceptionAdvice {
+    /*
     @ExceptionHandler({BindException.class})
     @Order(Ordered.HIGHEST_PRECEDENCE)
     public ResponseEntity<ApiExceptionEntity> exceptionHandler(BindException e) {
@@ -31,10 +34,21 @@ public class ApiExceptionAdvice {
         return this.getResponseEntity(e.getError());
     }
 
+
     @ExceptionHandler({Exception.class})
     public ResponseEntity<ApiExceptionEntity> exceptionHandler(Exception e) {
         log.info("#Exception:{}", e.getMessage());
         return this.getResponseEntity(ErrorCode.API_UNKNOWN_ERROR);
+    }
+
+     */
+
+    @ExceptionHandler({Exception.class})
+    public String exceptionHandler(Exception e, Model model) {
+        log.info("#Exception:{}", e.getMessage());
+//        return this.getResponseEntity(ErrorCode.API_UNKNOWN_ERROR);
+        model.addAttribute("message", ErrorCode.API_UNKNOWN_ERROR.getMessage());
+        return "error";
     }
 
     private ResponseEntity<ApiExceptionEntity> getResponseEntity(ErrorCode errorCode){

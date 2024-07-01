@@ -47,6 +47,8 @@ spring:
         show_sql: true
         format_sql: true
         encoding: UTF-8
+        type:
+          json_format_mapper: com.tarot.config.CustomJacksonJsonFormatMapper
 
 jwt:
   secret: and0dGVzdGp3dHRlc3Rqd3R0ZXN0and0dGVzdGp3dHRlc3Q=

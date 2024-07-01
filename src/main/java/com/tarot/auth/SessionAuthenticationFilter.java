@@ -24,7 +24,6 @@ public class SessionAuthenticationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        System.out.println("kkkkkkkkk");
         try{
             HttpSession httpSession = request.getSession(false);
             if(httpSession == null){

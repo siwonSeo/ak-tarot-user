@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>타로를 뽑아보세요.</title>
+    <title>로그인</title>
     <!-- Common CSS -->
     <link rel="stylesheet" th:href="@{/css/common.css}">
     <!-- Common JavaScript -->
@@ -11,7 +11,14 @@
 <body>
 <div class="content-wrapper">
     <div th:insert="fragments/header :: header"></div>
-    <a href="/oauth2/authorization/google">google</a>
+    <div class="login-container">
+        <h2>로그인</h2>
+        <p>로그인하면 내가 뽑은 타로점을 다시 볼 수 있습니다.</p>
+        <a href="/oauth2/authorization/google" class="google-login-btn">
+            <img src="/img/common/google.png" alt="Google Logo" class="google-logo">
+            Google 계정으로 로그인
+        </a>
+    </div>
 </div>
 <!--<div th:replace="fragments/footer :: footer"></div>-->
 </body>

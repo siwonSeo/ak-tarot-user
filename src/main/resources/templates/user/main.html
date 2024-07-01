@@ -2,17 +2,55 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>타로를 뽑아보세요.</title>
+    <title>내가 뽑았던 카드!</title>
     <!-- Common CSS -->
     <link rel="stylesheet" th:href="@{/css/common.css}">
     <!-- Common JavaScript -->
     <script th:src="@{/js/common.js}"></script>
+    <style>
+
+
+    </style>
 </head>
 <body>
 <div class="content-wrapper">
     <div th:insert="fragments/header :: header"></div>
-    123123
+    <!-- 해설 이력조회 문구 영역 -->
+    <h2 class="history-title">내가 뽑았던 카드!</h2>
+
+    <!-- 각 상담 내역 -->
+    <div th:each="consult : ${cardConsults}" class="consult-item">
+        <div class="consult-details">
+            <button class="view-details-btn" th:onclick="'viewDetails(' + ${consult.id} + ')'">해설 상세보기</button>
+            <div class="card-list">
+            <span th:each="card : ${consult.searchCards}" class="card-item">
+<!--                <img th:src="@{'/images/cards/' + ${card} + '.jpg'}" th:alt="${card}" class="card-image">-->
+                <img th:src="@{'/img/tarot/' + ${card.cardId} + '.jpg'}" alt="타로 카드 이미지" class="card-image" th:classappend="${card.isReversed} ? 'reverse'">
+            </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 페이징 영역 (가운데 정렬 및 스타일 개선) -->
+    <div class="pagination-container">
+        <div class="pagination">
+            <a th:if="${cardConsults.hasPrevious()}" th:href="@{/user/main(page=${cardConsults.number - 1}, size=${cardConsults.size})}" class="page-link">&laquo;</a>
+            <a th:each="pageNumber : ${#numbers.sequence(0, cardConsults.totalPages - 1)}"
+               th:href="@{/user/main(page=${pageNumber}, size=${cardConsults.size})}"
+               th:text="${pageNumber + 1}"
+               th:class="${pageNumber == cardConsults.number} ? 'page-link active' : 'page-link'"></a>
+            <a th:if="${cardConsults.hasNext()}" th:href="@{/user/main(page=${cardConsults.number + 1}, size=${cardConsults.size})}" class="page-link">&raquo;</a>
+        </div>
+    </div>
+
+
 </div>
 <!--<div th:replace="fragments/footer :: footer"></div>-->
+<script>
+    function viewDetails(consultId) {
+        window.location.href = `/user/consult/datail/${consultId}`;
+    }
+
+</script>
 </body>
 </html>
