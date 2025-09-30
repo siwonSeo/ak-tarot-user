@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>AK Tarot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css(v=${#dates.format(#dates.createNow(), 'yyyyMMddHHmmss')})">
+    <!-- Common CSS -->
+</head>
+<body>
+<div th:fragment="header" class="header">
+    <div class="header-left">
+        <a href="/" class="logo">AK Tarot</a>
+    </div>
+    <div class="header-right">
+        <div sec:authorize="isAuthenticated()" class="user-info">
+            <div class="user-avatar">
+                <img th:src="${#authentication.principal.picture}" alt="사용자 사진" class="user-picture"/>
+                <i class="fas fa-user-check user-icon"></i>
+            </div>
+            <form th:action="@{/auth/logout}" method="post" id="logoutForm" class="logout-form">
+                <button type="submit" class="logout-button">
+                    <i class="fas fa-sign-out-alt"></i> 로그아웃
+                </button>
+            </form>
+        </div>
+        <div sec:authorize="!isAuthenticated()" class="login-link">
+            <a th:href="@{/auth/login}" class="login-button">
+                <i class="fas fa-sign-in-alt"></i> 로그인
+            </a>
+        </div>
+
+        <div class="menu-container">
+            <button class="hamburger" onclick="toggleDropdown()">☰</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a th:href="@{/card/intro}">타로 카드 소개</a>
+                <a th:href="@{/card/reading}">타로 리딩법</a>
+                <div sec:authorize="isAuthenticated()">
+                    <a th:href="@{/user/main}">내가 뽑았던 카드!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

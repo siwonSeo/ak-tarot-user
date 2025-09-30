@@ -1,0 +1,182 @@
+{
+  "cardId": 48,
+  "cardName": "퀸 오브 컵",
+  "categories": [
+    {
+      "categoryCode": "A",
+      "categoryName": "사랑",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "깊은 감정적 이해와 공감",
+            "성숙하고 nurturing한 사랑",
+            "직관적이고 감성적인 파트너십"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 조작이나 의존",
+            "과도한 감정 표현",
+            "관계에서의 불안정"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "B",
+      "categoryName": "커리어",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "감성 지능을 활용한 리더십",
+            "창의적이고 직관적인 문제 해결",
+            "동료들에 대한 정서적 지원"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "업무에서의 감정적 불안정",
+            "과도한 감정 개입으로 인한 판단 오류",
+            "직장 내 관계의 어려움"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "C",
+      "categoryName": "금전",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "직관을 활용한 재정적 결정",
+            "감성적 만족을 위한 현명한 지출",
+            "예술이나 창의적 분야에서의 수익"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 소비나 재정적 불안",
+            "돈에 대한 비합리적 태도",
+            "재정 관리의 어려움"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "D",
+      "categoryName": "건강",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "정서적, 신체적 웰빙의 균형",
+            "직관적인 자기 치유 능력",
+            "감정과 건강의 긍정적 연결"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정적 스트레스로 인한 건강 악화",
+            "심신의 불균형",
+            "건강에 대한 과도한 걱정"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "E",
+      "categoryName": "공부",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "감성적 지능을 활용한 학습",
+            "직관적 이해와 통찰력",
+            "예술이나 인문학 분야에서의 탁월함"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정에 치우친 학습 태도",
+            "학업 스트레스로 인한 정서적 불안",
+            "집중력 부족"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "F",
+      "categoryName": "친구",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "깊은 이해와 공감을 바탕으로 한 우정",
+            "정서적 지원과 조언",
+            "직관적인 친구 간 소통"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "친구 관계에서의 감정적 조작",
+            "과도한 의존이나 집착",
+            "감정적 경계의 혼란"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "G",
+      "categoryName": "가족",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "가족에 대한 깊은 이해와 사랑",
+            "nurturing하고 지지적인 가정 환경",
+            "가족 간의 강한 정서적 유대"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "가족 관계에서의 감정적 혼란",
+            "과보호나 지나친 간섭",
+            "가족 내 정서적 불안정"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryCode": "Z",
+      "categoryName": "기타",
+      "interpretations": [
+        {
+          "isReversed": false,
+          "interpretationContents": [
+            "높은 감성 지능과 직관력",
+            "깊은 정서적 이해와 공감 능력",
+            "창의성과 예술적 재능의 발현"
+          ]
+        },
+        {
+          "isReversed": true,
+          "interpretationContents": [
+            "감정의 불안정이나 변덕",
+            "현실과 이상의 괴리",
+            "과도한 감정 표현이나 억제"
+          ]
+        }
+      ]
+    }
+  ]
+}

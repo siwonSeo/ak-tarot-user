@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>에러 발생.</title>
+    <!-- Common CSS -->
+    <link rel="stylesheet" th:href="@{/css/common.css(v=${#dates.format(#dates.createNow(), 'yyyyMMddHHmmss')})}">
+    <!-- Common JavaScript -->
+    <script th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="content-wrapper">
+    <div th:insert="fragments/header :: header"></div>
+    <h2 class="history-title">에러 발생.</h2>
+    <a th:href="@{/}" class="back-button">목록으로 돌아가기</a>
+
+</div>
+</body>
+</html>
