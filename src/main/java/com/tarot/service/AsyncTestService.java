@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @Service
 @Slf4j
 public class AsyncTestService {
+
     @Autowired
     private Executor taskExecutor;
 
