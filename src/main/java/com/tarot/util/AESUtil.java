@@ -8,6 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
 
+
 @Component
 public class AESUtil {
   public static String alg = "AES/CBC/PKCS5Padding";
