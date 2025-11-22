@@ -60,7 +60,19 @@ OAutnh로그인 적용(구글)
 로그인후 카드점 실행시 이력적재
 내가 뽑았던 카드! 에서 이력 조회
 
-##초기 환경 변수 필요(구글 OAuth2 인증시 필요)
+초기 구동시 필수 셋팅사항
+##초기 환경 변수 필요(구글 OAuth2 인증시 필요. 구글 클라우드 콘솔에서 발급 가능)
+
 - google-client-id
 - google-client-secret
-- google-redirection-url
+- google-redirection-url 
+
+로컬의 경우에 google-redirection-url는 http://localhost:8080/login/oauth2/code/google 로 입력해주고 
+구글클라우드 콘솔의 승인된 리디렉션 URI 에도 추가해준다.
+google-client-id와 google-client-secret는 각각 콘솔상의 client id와 보안 비밀번호를 넣어준다
+
+
+##flyway migration 추가
+mysql
+tarot 데이터베이스 생성후 flyway migrate 수행
+./gradlew flywayMigrate

@@ -1,7 +1,24 @@
+buildscript {
+    dependencies {
+        classpath 'com.mysql:mysql-connector-j:8.2.0'
+        classpath 'org.flywaydb:flyway-mysql:10.4.1'
+    }
+}
+
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.3.0'
     id 'io.spring.dependency-management' version '1.1.5'
+    id 'org.flywaydb.flyway' version '10.4.1'
+}
+
+flyway {
+    url= 'jdbc:mysql://localhost:3306/tarot?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul'
+    user= 'root'
+    password= 'sasa'
+//    locations = ['classpath:db/migration']
+    locations = ["filesystem:src/main/resources/db/migration"]
+    cleanDisabled = false
 }
 
 group = 'tarot'
@@ -18,6 +35,11 @@ repositories {
 }
 
 dependencies {
+//    implementation ("org.flywaydb:flyway-core")
+//    implementation 'org.flywaydb:flyway-core:11.10.1'
+//    implementation 'org.flywaydb:flyway-mysql'
+    implementation 'org.flywaydb:flyway-core'
+    implementation 'org.flywaydb:flyway-mysql'  // 이거 주석 해제!
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
