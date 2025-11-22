@@ -1,0 +1,86 @@
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (0,0,'Major','0','광대 (The Fool)'),
+	 (1,1,'Major','1','마법사 (The Magician)'),
+	 (2,2,'Major','2','여사제 (The High Priestess)'),
+	 (3,3,'Major','3','여황제 (The Empress)'),
+	 (4,4,'Major','4','황제 (The Emperor)'),
+	 (5,5,'Major','5','사제 (The Hierophant)'),
+	 (6,6,'Major','6','연인들 (The Lovers)'),
+	 (7,7,'Major','7','전차 (The Chariot)'),
+	 (8,8,'Major','8','힘 (Strength)'),
+	 (9,9,'Major','9','은둔자 (The Hermit)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (10,10,'Major','10','운명의 수레바퀴 (Wheel of Fortune)'),
+	 (11,11,'Major','11','정의 (Justice)'),
+	 (12,12,'Major','12','행드맨 (The Hanged Man)'),
+	 (13,13,'Major','13','죽음 (Death)'),
+	 (14,14,'Major','14','절제 (Temperance)'),
+	 (15,15,'Major','15','악마 (The Devil)'),
+	 (16,16,'Major','16','탑 (The Tower)'),
+	 (17,17,'Major','17','별 (The Star)'),
+	 (18,18,'Major','18','달 (The Moon)'),
+	 (19,19,'Major','19','태양 (The Sun)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (20,20,'Major','20','판사 (Judgement)'),
+	 (21,21,'Major','21','세계 (The World)'),
+	 (22,1,'Wand','Ace','에이스 오브 완드 (Ace of Wands)'),
+	 (23,2,'Wand','Two','투 오브 완드 (Two of Wands)'),
+	 (24,3,'Wand','Three','쓰리 오브 완드 (Three of Wands)'),
+	 (25,4,'Wand','Four','포 오브 완드 (Four of Wands)'),
+	 (26,5,'Wand','Five','파이브 오브 완드 (Five of Wands)'),
+	 (27,6,'Wand','Six','식스 오브 완드 (Six of Wands)'),
+	 (28,7,'Wand','Seven','세븐 오브 완드 (Seven of Wands)'),
+	 (29,8,'Wand','Eight','에잇 오브 완드 (Eight of Wands)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (30,9,'Wand','Nine','나인 오브 완드 (Nine of Wands)'),
+	 (31,10,'Wand','Ten','텐 오브 완드 (Ten of Wands)'),
+	 (32,11,'Wand','Page','페이지 오브 완드 (Page of Wands)'),
+	 (33,12,'Wand','Knight','나이트 오브 완드 (Knight of Wands)'),
+	 (34,13,'Wand','Queen','퀸 오브 완드 (Queen of Wands)'),
+	 (35,14,'Wand','King','킹 오브 완드 (King of Wands)'),
+	 (36,1,'Cup','Ace','에이스 오브 컵 (Ace of Cups)'),
+	 (37,2,'Cup','Two','투 오브 컵 (Two of Cups)'),
+	 (38,3,'Cup','Three','쓰리 컵 (Three of Cups)'),
+	 (39,4,'Cup','Four','포 오브 컵 (Four of Cups)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (40,5,'Cup','Five','파이브 오브 컵 (Five of Cups)'),
+	 (41,6,'Cup','Six','식스 오브 컵 (Six of Cups)'),
+	 (42,7,'Cup','Seven','세븐 오브 컵 (Seven of Cups)'),
+	 (43,8,'Cup','Eight','에잇 오브 컵 (Eight of Cups)'),
+	 (44,9,'Cup','Nine','나인 오브 컵 (Nine of Cups)'),
+	 (45,10,'Cup','Ten','텐 오브 컵 (Ten of Cups)'),
+	 (46,11,'Cup','Page','페이지 오브 컵 (Page of Cups)'),
+	 (47,12,'Cup','Knight','나이트 오브 컵 (Knight of Cups)'),
+	 (48,13,'Cup','Queen','퀸 오브 컵 (Queen of Cups)'),
+	 (49,14,'Cup','King','킹 오브 컵 (King of Cups)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (50,1,'Sword','Ace','에이스 오브 소드 (Ace of Swords)'),
+	 (51,2,'Sword','Two','투 오브 소드 (Two of Swords)'),
+	 (52,3,'Sword','Three','쓰리 오브 소드 (Three of Swords)'),
+	 (53,4,'Sword','Four','포 오브 소드 (Four of Swords)'),
+	 (54,5,'Sword','Five','파이브 오브 소드 (Five of Swords)'),
+	 (55,6,'Sword','Six','식스 오브 소드 (Six of Swords)'),
+	 (56,7,'Sword','Seven','세븐 오브 소드 (Seven of Swords)'),
+	 (57,8,'Sword','Eight','에잇 오브 소드 (Eight of Swords)'),
+	 (58,9,'Sword','Nine','나인 오브 소드 (Nine of Swords)'),
+	 (59,10,'Sword','Ten','텐 오브 소드 (Ten of Swords)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (60,11,'Sword','Page','페이지 오브 소드 (Page of Swords)'),
+	 (61,12,'Sword','Knight','나이트 오브 소드 (Knight of Swords)'),
+	 (62,13,'Sword','Queen','퀸 오브 소드 (Queen of Swords)'),
+	 (63,14,'Sword','King','킹 오브 소드 (King of Swords)'),
+	 (64,1,'Pentacle','Ace','에이스 오브 펜타클스 (Ace of Pentacles)'),
+	 (65,2,'Pentacle','Two','투 오브 펜타클스 (Two of Pentacles)'),
+	 (66,3,'Pentacle','Three','쓰리 오브 펜타클스 (Three of Pentacles)'),
+	 (67,4,'Pentacle','Four','포 오브 펜타클스 (Four of Pentacles)'),
+	 (68,5,'Pentacle','Five','파이브 오브 펜타클스 (Five of Pentacles)'),
+	 (69,6,'Pentacle','Six','식스 오브 펜타클스 (Six of Pentacles)');
+INSERT INTO tarot.tarot_card (card_id,card_number,card_type,card_number_name,card_name) VALUES
+	 (70,7,'Pentacle','Seven','세븐 오브 펜타클스 (Seven of Pentacles)'),
+	 (71,8,'Pentacle','Eight','에잇 오브 펜타클스 (Eight of Pentacles)'),
+	 (72,9,'Pentacle','Nine','나인 오브 펜타클스 (Nine of Pentacles)'),
+	 (73,10,'Pentacle','Ten','텐 오브 펜타클스 (Ten of Pentacles)'),
+	 (74,11,'Pentacle','Page','페이지 오브 펜타클스 (Page of Pentacles)'),
+	 (75,12,'Pentacle','Knight','나이트 오브 펜타클스 (Knight of Pentacles)'),
+	 (76,13,'Pentacle','Queen','퀸 오브 펜타클스 (Queen of Pentacles)'),
+	 (77,14,'Pentacle','King','킹 오브 펜타클스 (King of Pentacles)');
