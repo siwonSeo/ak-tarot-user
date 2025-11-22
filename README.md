@@ -76,3 +76,6 @@ google-client-id와 google-client-secret는 각각 콘솔상의 client id와 보
 mysql
 tarot 데이터베이스 생성후 flyway migrate 수행
 ./gradlew flywayMigrate
+
+로컬 스웨거
+http://localhost:8080/swagger-ui/index.html
